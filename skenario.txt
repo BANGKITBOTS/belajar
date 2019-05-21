@@ -1,0 +1,29 @@
+(event:follow, {saveUser, pushTextMessage})
+Halo, Nama! Salam kenal.
+Pada game ini Kamu diminta untuk menebak kata apa yang aku maksud. Kamu bisa menebak huruf demi huruf atau langsung menebak katanya. Kamu punya kesempatan maksimal 3 kali tebakan salah.
+Untuk memulai silakan ketikkan perintah "mulai"
+
+	ohoy
+
+(event:message, {checkState, pushTextMessage})
+ketik "mulai" dulu, Gan :D
+
+	mulai
+
+(event:message, {checkState, updateState, setAnswer, pushTextMessage})
+Soal: Hewan yang biasa digunakan untuk berkuda
+
+	AYAM
+
+(event:message, {checkState, checkAnswer, updateState, pushTextMessage})
+Ow ow oww.. masih salah. Coba tebak lagi. Kesempatan salah 2 kali lagi
+
+	KUDA
+
+(event:message, {checkState, checkAnswer, updateState, pushTextMessage})
+Yup benaaar, Kamu berhasil!
+Sticker (y)
+
+// Yaaah.. Kesempatanmu habis.
+// Jawabannya adalah ABSOLUT
+// Ketik "mulai" untuk mencoba lagi.
